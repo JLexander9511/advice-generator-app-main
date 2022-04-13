@@ -1,0 +1,71 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px; }
+
+html {
+  font-family: "Manrope", sans-serif; }
+
+body {
+  background-color: #1f2632;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  margin: 0rem 1.5rem; }
+
+.adviceCard {
+  background-color: #323a49;
+  border-radius: .65rem;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .adviceCard__title {
+    font-size: .85rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: #52ffa8;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem; }
+  .adviceCard__advice {
+    font-weight: 600;
+    color: #cee3e9;
+    font-size: 1.75rem; }
+  .adviceCard__divider {
+    margin: 1.5rem 0rem;
+    margin-bottom: 2rem;
+    overflow: hidden; }
+  .adviceCard__button {
+    /*position: relative;
+        top: 50px;*/
+    position: absolute;
+    bottom: -35px;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    border: none;
+    background-color: #52ffa8;
+    cursor: pointer;
+    transition: all ease-in 0.05s; }
+    .adviceCard__button img {
+      width: 50%; }
+  .adviceCard__button:hover {
+    box-shadow: 0px 0px 30px #52ffa8; }
+
+@media screen and (min-width: 376px) {
+  .adviceCard {
+    width: 550px; } }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 3rem;
+  color: white; }
+
+.attribution a {
+  color: white; }
